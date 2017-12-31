@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/ec5f56955430257d3af173c3d3ff9a39378d85e0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="746274223beb11b1cda7854d7eec3038695c2c93">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/debug/classes_b118912bb3712d585ff62a000d5e425ff4a79436.jar" />
+    </item>
+
+</items>

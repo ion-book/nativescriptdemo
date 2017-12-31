@@ -1,0 +1,28 @@
+<DockLayout left="10%" width="80%" orientation="vertical">
+    <Image dock="top" width="20%" src="https://cdn-images-1.medium.com/max/272/1*YVyVa_5CAC_CkhrmgNS2Eg.png"></Image>
+    <Label text="Login" class="title" dock="top"></Label>
+    <TextField 
+        [(ngModel)]="email"
+        hint="Email"
+        keyboardType="email"
+        autocorrection="false"
+        autocapitalizationType="none"
+        class="editable" 
+        dock="top" 
+        editable="true"></TextField>
+    <TextField 
+        [(ngModel)]="password"
+        hint="password"
+        secure="true"
+        autocorrection="false"
+        autocapitalizationType="none"
+        class="editable" 
+        dock="top" 
+        editable="true"></TextField>
+    <Button (tap)="login()" class="button" dock="top" text="Ingresar" height="10%"></Button>
+    <Button 
+    [nsRouterLink]="['/home']" 
+    pageTransition="flip"
+    class="button" dock="top" text="Ingresar" height="10%"></Button>
+    <Button class="button" dock="top" text="Registrarse" height="10%"></Button>
+</DockLayout>

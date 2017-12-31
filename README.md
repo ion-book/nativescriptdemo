@@ -11,5 +11,5 @@ Para la instalación vamos a necesitar:
 Plugins instalados
 
 <pre>
-npm install email-validator --save
+tns plugin add nativescript-plugin-firebase --save
 </pre>
