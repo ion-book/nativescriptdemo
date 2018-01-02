@@ -4,7 +4,7 @@ var http_1 = require("@angular/http");
 require("rxjs/add/observable/fromPromise");
 var http_utils_1 = require("../http-client/http-utils");
 var ns_file_system_1 = require("../file-system/ns-file-system");
-var NSXSRFStrategy = /** @class */ (function () {
+var NSXSRFStrategy = (function () {
     function NSXSRFStrategy() {
     }
     NSXSRFStrategy.prototype.configureRequest = function (_req) {
@@ -13,7 +13,7 @@ var NSXSRFStrategy = /** @class */ (function () {
     return NSXSRFStrategy;
 }());
 exports.NSXSRFStrategy = NSXSRFStrategy;
-var NSHttp = /** @class */ (function (_super) {
+var NSHttp = (function (_super) {
     __extends(NSHttp, _super);
     function NSHttp(backend, defaultOptions, nsFileSystem) {
         var _this = _super.call(this, backend, defaultOptions) || this;
@@ -23,7 +23,13 @@ var NSHttp = /** @class */ (function (_super) {
     /**
      * Performs a request with `request` http method.
      */
-    NSHttp.prototype.request = function (req, options) {
+    /**
+         * Performs a request with `request` http method.
+         */
+    NSHttp.prototype.request = /**
+         * Performs a request with `request` http method.
+         */
+    function (req, options) {
         var urlString = typeof req === "string" ? req : req.url;
         if (http_utils_1.isLocalRequest(urlString)) {
             return this.requestLocalFile(urlString);
@@ -35,7 +41,13 @@ var NSHttp = /** @class */ (function (_super) {
     /**
      * Performs a request with `get` http method.
      */
-    NSHttp.prototype.get = function (url, options) {
+    /**
+         * Performs a request with `get` http method.
+         */
+    NSHttp.prototype.get = /**
+         * Performs a request with `get` http method.
+         */
+    function (url, options) {
         if (http_utils_1.isLocalRequest(url)) {
             return this.requestLocalFile(url);
         }
@@ -46,10 +58,15 @@ var NSHttp = /** @class */ (function (_super) {
     NSHttp.prototype.requestLocalFile = function (url) {
         return http_utils_1.processLocalFileRequest(url, this.nsFileSystem, createResponse, createResponse);
     };
-    NSHttp = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [http_1.ConnectionBackend, http_1.RequestOptions, ns_file_system_1.NSFileSystem])
-    ], NSHttp);
+    NSHttp.decorators = [
+        { type: core_1.Injectable },
+    ];
+    /** @nocollapse */
+    NSHttp.ctorParameters = function () { return [
+        { type: http_1.ConnectionBackend, },
+        { type: http_1.RequestOptions, },
+        { type: ns_file_system_1.NSFileSystem, },
+    ]; };
     return NSHttp;
 }(http_1.Http));
 exports.NSHttp = NSHttp;

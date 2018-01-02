@@ -3,7 +3,7 @@ var core_1 = require("@angular/core");
 var file_system_1 = require("tns-core-modules/file-system");
 // Allows greater flexibility with `file-system` and Angular
 // Also provides a way for `file-system` to be mocked for testing
-var NSFileSystem = /** @class */ (function () {
+var NSFileSystem = (function () {
     function NSFileSystem() {
     }
     NSFileSystem.prototype.currentApp = function () {
@@ -15,9 +15,11 @@ var NSFileSystem = /** @class */ (function () {
     NSFileSystem.prototype.fileExists = function (path) {
         return file_system_1.File.exists(path);
     };
-    NSFileSystem = __decorate([
-        core_1.Injectable()
-    ], NSFileSystem);
+    NSFileSystem.decorators = [
+        { type: core_1.Injectable },
+    ];
+    /** @nocollapse */
+    NSFileSystem.ctorParameters = function () { return []; };
     return NSFileSystem;
 }());
 exports.NSFileSystem = NSFileSystem;

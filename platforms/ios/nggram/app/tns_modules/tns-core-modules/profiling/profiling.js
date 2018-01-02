@@ -3,6 +3,15 @@ function uptime() {
     return global.android ? org.nativescript.Process.getUpTime() : global.__tns_uptime();
 }
 exports.uptime = uptime;
+function log(message) {
+    if (global.__nslog) {
+        global.__nslog("CONSOLE LOG: " + message);
+    }
+    else {
+        console.log(message);
+    }
+}
+exports.log = log;
 var timers = {};
 var anyGlobal = global;
 var profileNames = [];
@@ -65,7 +74,8 @@ function isRunning(name) {
     return !!(info && info.runCount);
 }
 exports.isRunning = isRunning;
-function countersProfileFunctionFactory(fn, name) {
+function countersProfileFunctionFactory(fn, name, type) {
+    if (type === void 0) { type = 1; }
     profileNames.push(name);
     return function () {
         start(name);
@@ -77,8 +87,9 @@ function countersProfileFunctionFactory(fn, name) {
         }
     };
 }
-function timelineProfileFunctionFactory(fn, name) {
-    return function () {
+function timelineProfileFunctionFactory(fn, name, type) {
+    if (type === void 0) { type = 1; }
+    return type === 1 ? function () {
         var start = exports.time();
         try {
             return fn.apply(this, arguments);
@@ -86,6 +97,15 @@ function timelineProfileFunctionFactory(fn, name) {
         finally {
             var end = exports.time();
             console.log("Timeline: Modules: " + name + " " + this + "  (" + start + "ms. - " + end + "ms.)");
+        }
+    } : function () {
+        var start = exports.time();
+        try {
+            return fn.apply(this, arguments);
+        }
+        finally {
+            var end = exports.time();
+            console.log("Timeline: Modules: " + name + "  (" + start + "ms. - " + end + "ms.)");
         }
     };
 }
@@ -128,7 +148,20 @@ var profileMethodUnnamed = function (target, key, descriptor) {
         className = target.constructor.name + ".";
     }
     var name = className + key;
-    descriptor.value = profileFunctionFactory(originalMethod, name);
+    descriptor.value = profileFunctionFactory(originalMethod, name, 1);
+    return descriptor;
+};
+var profileStaticMethodUnnamed = function (ctor, key, descriptor) {
+    if (descriptor === undefined) {
+        descriptor = Object.getOwnPropertyDescriptor(ctor, key);
+    }
+    var originalMethod = descriptor.value;
+    var className = "";
+    if (ctor && ctor.name) {
+        className = ctor.name + ".";
+    }
+    var name = className + key;
+    descriptor.value = profileFunctionFactory(originalMethod, name, 0);
     return descriptor;
 };
 function profileMethodNamed(name) {
@@ -149,6 +182,12 @@ function profile(nameFnOrTarget, fnOrKey, descriptor) {
             return;
         }
         return profileMethodUnnamed(nameFnOrTarget, fnOrKey, descriptor);
+    }
+    else if (typeof nameFnOrTarget === "function" && (typeof fnOrKey === "string" || typeof fnOrKey === "symbol")) {
+        if (!profileFunctionFactory) {
+            return;
+        }
+        return profileStaticMethodUnnamed(nameFnOrTarget, fnOrKey, descriptor);
     }
     else if (typeof nameFnOrTarget === "string" && typeof fnOrKey === "function") {
         if (!profileFunctionFactory) {

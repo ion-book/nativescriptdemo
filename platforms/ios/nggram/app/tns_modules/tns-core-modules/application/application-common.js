@@ -21,7 +21,7 @@ exports.exitEvent = "exit";
 exports.lowMemoryEvent = "lowMemory";
 exports.uncaughtErrorEvent = "uncaughtError";
 exports.orientationChangedEvent = "orientationChanged";
-var cssFile = "app.css";
+var cssFile = "./app.css";
 var resources = {};
 function getResources() {
     return resources;
@@ -44,6 +44,10 @@ function setApplication(instance) {
 exports.setApplication = setApplication;
 function livesync() {
     events.notify({ eventName: "livesync", object: app });
+    var liveSyncCore = global.__onLiveSyncCore;
+    if (liveSyncCore) {
+        liveSyncCore();
+    }
 }
 exports.livesync = livesync;
 function setCssFileName(cssFileName) {
@@ -55,6 +59,10 @@ function getCssFileName() {
     return cssFile;
 }
 exports.getCssFileName = getCssFileName;
+function loadAppCss() {
+    events.notify({ eventName: "loadAppCss", object: app, cssFile: getCssFileName() });
+}
+exports.loadAppCss = loadAppCss;
 function addCss(cssText) {
     events.notify({ eventName: "cssChanged", object: app, cssText: cssText });
 }

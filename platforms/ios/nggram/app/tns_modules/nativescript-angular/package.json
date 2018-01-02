@@ -1,27 +1,32 @@
 {
-  "_from": "nativescript-angular@~4.4.0",
-  "_id": "nativescript-angular@4.4.1",
+  "_args": [
+    [
+      "nativescript-angular@5.0.0",
+      "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram"
+    ]
+  ],
+  "_from": "nativescript-angular@5.0.0",
+  "_id": "nativescript-angular@5.0.0",
   "_inBundle": false,
-  "_integrity": "sha1-eCRonQwtxoKL+xclmBqh9tlCCas=",
+  "_integrity": "sha512-sFxTTRyHby4UNo+sDI+7MoDpu/98SMGLPjYajixNwJ0K+9j9keTzt8U4AUl74BeTaDgjFQJc35QCcjLR+ncw/g==",
   "_location": "/nativescript-angular",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "nativescript-angular@~4.4.0",
+    "raw": "nativescript-angular@5.0.0",
     "name": "nativescript-angular",
     "escapedName": "nativescript-angular",
-    "rawSpec": "~4.4.0",
+    "rawSpec": "5.0.0",
     "saveSpec": null,
-    "fetchSpec": "~4.4.0"
+    "fetchSpec": "5.0.0"
   },
   "_requiredBy": [
-    "/tns-template-hello-world-ng"
+    "/"
   ],
-  "_resolved": "https://registry.npmjs.org/nativescript-angular/-/nativescript-angular-4.4.1.tgz",
-  "_shasum": "7824689d0c2dc6828bfb1725981aa1f6d94209ab",
-  "_spec": "nativescript-angular@~4.4.0",
-  "_where": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/node_modules/tns-template-hello-world-ng",
+  "_resolved": "https://registry.npmjs.org/nativescript-angular/-/nativescript-angular-5.0.0.tgz",
+  "_spec": "5.0.0",
+  "_where": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram",
   "author": {
     "name": "NativeScript Team"
   },
@@ -31,7 +36,6 @@
   "bugs": {
     "url": "https://github.com/NativeScript/nativescript-angular/issues"
   },
-  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Hristo Deshev",
@@ -50,23 +54,23 @@
     "nativescript-intl": "^3.0.0",
     "reflect-metadata": "^0.1.8"
   },
-  "deprecated": false,
   "description": "An Angular renderer that lets you build mobile apps with NativeScript.",
   "devDependencies": {
-    "@angular/animations": "~4.4.1",
-    "@angular/common": "~4.4.1",
-    "@angular/compiler": "~4.4.1",
-    "@angular/compiler-cli": "~4.4.1",
-    "@angular/core": "~4.4.1",
-    "@angular/forms": "~4.4.1",
-    "@angular/http": "~4.4.1",
-    "@angular/platform-browser": "~4.4.1",
-    "@angular/router": "~4.4.1",
-    "codelyzer": "^3.1.2",
-    "rxjs": "^5.4.2",
+    "@angular/animations": "~5.0.0",
+    "@angular/common": "~5.0.0",
+    "@angular/compiler": "~5.0.0",
+    "@angular/compiler-cli": "~5.0.0",
+    "@angular/core": "~5.0.0",
+    "@angular/forms": "~5.0.0",
+    "@angular/http": "~5.0.0",
+    "@angular/platform-browser": "~5.0.0",
+    "@angular/platform-browser-dynamic": "~5.0.0",
+    "@angular/router": "~5.0.0",
+    "codelyzer": "^4.0.0",
+    "rxjs": "^5.5.0",
     "tns-core-modules": "next",
     "tslint": "^5.5.0",
-    "typescript": "^2.5.1",
+    "typescript": "~2.4.2",
     "zone.js": "^0.8.12"
   },
   "homepage": "https://www.nativescript.org/",
@@ -83,16 +87,18 @@
     }
   },
   "peerDependencies": {
-    "@angular/common": "~4.4.1",
-    "@angular/compiler": "~4.4.1",
-    "@angular/core": "~4.4.1",
-    "@angular/forms": "~4.4.1",
-    "@angular/http": "~4.4.1",
-    "@angular/platform-browser": "~4.4.1",
-    "@angular/router": "~4.4.1",
-    "rxjs": "^5.0.1",
-    "tns-core-modules": "^3.1.0 || >3.3.0-",
-    "zone.js": "^0.8.4"
+    "@angular/platform-browser-dynamic": "~5.0.0",
+    "@angular/common": "~5.0.0",
+    "@angular/compiler": "~5.0.0",
+    "@angular/core": "~5.0.0",
+    "@angular/forms": "~5.0.0",
+    "@angular/http": "~5.0.0",
+    "@angular/platform-browser": "~5.0.0",
+    "@angular/router": "~5.0.0",
+    "rxjs": "^5.5.0",
+    "tns-core-modules": "^3.1.0 || >3.4.0-",
+    "zone.js": "^0.8.4",
+    "typescript": "~2.4.2"
   },
   "repository": {
     "type": "git",
@@ -101,9 +107,9 @@
   "scripts": {
     "ngc": "ngc -p tsconfig.json",
     "postinstall": "node postinstall.js",
-    "prepublish": "npm run tsc && npm run ngc",
+    "prepare": "npm run ngc && node ./bin/remove-polyfills-metadata.js",
     "tsc": "tsc -p tsconfig.json",
     "tslint": "tslint --project tsconfig.json --config tslint.json --type-check"
   },
-  "version": "4.4.1"
+  "version": "5.0.0"
 }

@@ -26,7 +26,7 @@ if (global.___TS_UNUSED) {
         return core_1.InjectionToken;
     })();
 }
-var NativeScriptSanitizer = /** @class */ (function (_super) {
+var NativeScriptSanitizer = (function (_super) {
     __extends(NativeScriptSanitizer, _super);
     function NativeScriptSanitizer() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -37,7 +37,7 @@ var NativeScriptSanitizer = /** @class */ (function (_super) {
     return NativeScriptSanitizer;
 }(core_1.Sanitizer));
 exports.NativeScriptSanitizer = NativeScriptSanitizer;
-var NativeScriptDocument = /** @class */ (function () {
+var NativeScriptDocument = (function () {
     function NativeScriptDocument() {
     }
     NativeScriptDocument.prototype.createElement = function (tag) {
@@ -48,10 +48,10 @@ var NativeScriptDocument = /** @class */ (function () {
 exports.NativeScriptDocument = NativeScriptDocument;
 exports.COMMON_PROVIDERS = [
     platform_providers_1.defaultPageFactoryProvider,
-    { provide: core_1.Sanitizer, useClass: NativeScriptSanitizer },
-    { provide: common_1.DOCUMENT, useClass: NativeScriptDocument },
+    { provide: core_1.Sanitizer, useClass: NativeScriptSanitizer, deps: [] },
+    { provide: common_1.DOCUMENT, useClass: NativeScriptDocument, deps: [] },
 ];
-var NativeScriptPlatformRef = /** @class */ (function (_super) {
+var NativeScriptPlatformRef = (function (_super) {
     __extends(NativeScriptPlatformRef, _super);
     function NativeScriptPlatformRef(platform, appOptions) {
         var _this = _super.call(this) || this;
@@ -77,6 +77,8 @@ var NativeScriptPlatformRef = /** @class */ (function (_super) {
         global.__onLiveSyncCore = function () { return _this.livesyncModule(); };
         var mainPageEntry = this.createNavigationEntry(this._bootstrapper);
         if (this.appOptions && typeof this.appOptions.cssFile === "string") {
+            // TODO: All exported fields in ES6 modules should be read-only
+            // Change the case when tns-core-modules become ES6 compatible and there is a legal way to set cssFile
             // TODO: All exported fields in ES6 modules should be read-only
             // Change the case when tns-core-modules become ES6 compatible and there is a legal way to set cssFile
             application_1.setCssFileName(this.appOptions.cssFile);
@@ -133,13 +135,16 @@ var NativeScriptPlatformRef = /** @class */ (function (_super) {
                 var initHandler = profiling_1.profile(initHandlerMethodName, function () {
                     page.off(page_1.Page.navigatingToEvent, initHandler);
                     // profiling.stop("application-start");
+                    // profiling.stop("application-start");
                     trace_1.rendererLog("Page loaded");
+                    // profiling.start("ng-bootstrap");
                     // profiling.start("ng-bootstrap");
                     trace_1.rendererLog("BOOTSTRAPPING...");
                     var bootstrapMethodName = "nativescript-angular/platform-common.postBootstrapAction";
                     bootstrapAction().then(profiling_1.profile(bootstrapMethodName, function (moduleRef) {
                         // profiling.stop("ng-bootstrap");
-                        trace_1.rendererLog("ANGULAR BOOTSTRAP DONE.");
+                        // profiling.stop("ng-bootstrap");
+                        profiling_1.log("ANGULAR BOOTSTRAP DONE. " + profiling_1.uptime());
                         lastBootstrappedModule = new WeakRef(moduleRef);
                         if (resolve) {
                             resolve(moduleRef);
@@ -156,13 +161,14 @@ var NativeScriptPlatformRef = /** @class */ (function (_super) {
                             reject(err);
                         }
                     });
+                    global.Zone.drainMicroTaskQueue();
                 });
                 page.on(page_1.Page.navigatingToEvent, initHandler);
                 return page;
-            }
+            },
+            animated: false
         };
         if (isReboot) {
-            navEntry.animated = false;
             navEntry.clearHistory = true;
         }
         return navEntry;

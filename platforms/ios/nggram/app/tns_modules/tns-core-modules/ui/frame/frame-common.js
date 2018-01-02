@@ -2,34 +2,13 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
+var page_1 = require("../page");
 var view_1 = require("../core/view");
 var file_name_resolver_1 = require("../../file-system/file-name-resolver");
 var file_system_1 = require("../../file-system");
 var builder_1 = require("../builder");
-var application = require("../../application");
-exports.application = application;
-var profiling_1 = require("tns-core-modules/profiling");
+var profiling_1 = require("../../profiling");
 __export(require("../core/view"));
-function onLivesync(args) {
-    setTimeout(function () {
-        var g = global;
-        if (g.errorPage) {
-            g.errorPage.closeModal();
-            g.errorPage = undefined;
-        }
-        try {
-            g.__onLiveSyncCore();
-        }
-        catch (ex) {
-            g.errorPage = builder_1.parse("<Page><ScrollView><Label text=\"" + ex + "\" textWrap=\"true\" style=\"color: red;\" /></ScrollView></Page>");
-            g.errorPage.showModal();
-        }
-    });
-}
-application.on("livesync", onLivesync);
-if (global && global.__inspector) {
-    require("tns-core-modules/debugger/devtools-elements");
-}
 var frameStack = [];
 function buildEntryFromArgs(arg) {
     var entry;
@@ -73,7 +52,6 @@ var entryCreatePage = profiling_1.profile("entry.create", function (entry) {
     if (!page) {
         throw new Error("Failed to create Page with entry.create() function.");
     }
-    page._refreshCss();
     return page;
 });
 var moduleCreatePage = profiling_1.profile("module.createPage", function (moduleNamePath, moduleExports) {
@@ -135,7 +113,7 @@ exports.resolvePageFromEntry = profiling_1.profile("resolvePageFromEntry", funct
             page = pageFromBuilder(moduleNamePath, moduleExports);
         }
         if (!page) {
-            throw new Error("Failed to load Page from entry.moduleName: " + entry.moduleName);
+            throw new Error("Failed to load page XML file for module: " + entry.moduleName);
         }
     }
     return page;
@@ -143,14 +121,58 @@ exports.resolvePageFromEntry = profiling_1.profile("resolvePageFromEntry", funct
 var FrameBase = (function (_super) {
     __extends(FrameBase, _super);
     function FrameBase() {
-        var _this = _super.call(this) || this;
-        _this._isInFrameStack = false;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
         _this._backStack = new Array();
         _this._navigationQueue = new Array();
+        _this._isInFrameStack = false;
         return _this;
     }
+    FrameBase.prototype._addChildFromBuilder = function (name, value) {
+        if (value instanceof page_1.Page) {
+            this.navigate({ create: function () { return value; } });
+        }
+    };
+    FrameBase.prototype.onLoaded = function () {
+        _super.prototype.onLoaded.call(this);
+        this._processNextNavigationEntry();
+    };
     FrameBase.prototype.canGoBack = function () {
-        return this._backStack.length > 0;
+        var _this = this;
+        var backstack = this._backStack.length;
+        var previousForwardNotInBackstack = false;
+        this._navigationQueue.forEach(function (item) {
+            var entry = item.entry;
+            if (item.isBackNavigation) {
+                previousForwardNotInBackstack = false;
+                if (!entry) {
+                    backstack--;
+                }
+                else {
+                    var backstackIndex = _this._backStack.indexOf(entry);
+                    if (backstackIndex !== -1) {
+                        backstack = backstackIndex;
+                    }
+                    else {
+                        backstack--;
+                    }
+                }
+            }
+            else if (entry.entry.clearHistory) {
+                previousForwardNotInBackstack = false;
+                backstack = 0;
+            }
+            else {
+                backstack++;
+                if (previousForwardNotInBackstack) {
+                    backstack--;
+                }
+                previousForwardNotInBackstack = entry.entry.backstackVisible === false;
+            }
+        });
+        if (this._navigationQueue.length > 0 && !this._currentEntry) {
+            backstack--;
+        }
+        return backstack > 0;
     };
     FrameBase.prototype.goBack = function (backstackEntry) {
         if (view_1.traceEnabled()) {
@@ -159,28 +181,28 @@ var FrameBase = (function (_super) {
         if (!this.canGoBack()) {
             return;
         }
-        if (!backstackEntry) {
-            backstackEntry = this._backStack.pop();
-        }
-        else {
-            var backIndex = this._backStack.indexOf(backstackEntry);
-            if (backIndex < 0) {
+        if (backstackEntry) {
+            var index_1 = this._backStack.indexOf(backstackEntry);
+            if (index_1 < 0) {
                 return;
             }
-            this._backStack.splice(backIndex);
         }
         var navigationContext = {
             entry: backstackEntry,
             isBackNavigation: true
         };
         this._navigationQueue.push(navigationContext);
-        if (this._navigationQueue.length === 1) {
-            this._processNavigationContext(navigationContext);
+        this._processNextNavigationEntry();
+    };
+    FrameBase.prototype._removeEntry = function (removed) {
+        var page = removed.resolvedPage;
+        var frame = page.frame;
+        page._frame = null;
+        if (frame) {
+            frame._removeView(page);
         }
         else {
-            if (view_1.traceEnabled()) {
-                view_1.traceWrite("Going back scheduled", view_1.traceCategories.Navigation);
-            }
+            page._tearDownUI(true);
         }
     };
     FrameBase.prototype.navigate = function (param) {
@@ -201,20 +223,51 @@ var FrameBase = (function (_super) {
             isBackNavigation: false
         };
         this._navigationQueue.push(navigationContext);
-        if (this._navigationQueue.length === 1) {
-            this._processNavigationContext(navigationContext);
-        }
-        else {
-            if (view_1.traceEnabled()) {
-                view_1.traceWrite("Navigation scheduled", view_1.traceCategories.Navigation);
-            }
-        }
+        this._processNextNavigationEntry();
     };
     FrameBase.prototype.isCurrent = function (entry) {
         return this._currentEntry === entry;
     };
-    FrameBase.prototype.setCurrent = function (entry) {
+    FrameBase.prototype.setCurrent = function (entry, isBack) {
+        var newPage = entry.resolvedPage;
+        if (!newPage.frame) {
+            this._addView(newPage);
+            newPage._frame = this;
+        }
         this._currentEntry = entry;
+        this._executingEntry = null;
+        newPage.onNavigatedTo(isBack);
+    };
+    FrameBase.prototype._updateBackstack = function (entry, isBack) {
+        var _this = this;
+        this.raiseCurrentPageNavigatedEvents(isBack);
+        var current = this._currentEntry;
+        if (isBack) {
+            var index_2 = this._backStack.indexOf(entry);
+            this._backStack.splice(index_2 + 1).forEach(function (e) { return _this._removeEntry(e); });
+            this._backStack.pop();
+        }
+        else {
+            if (entry.entry.clearHistory) {
+                this._backStack.forEach(function (e) { return _this._removeEntry(e); });
+                this._backStack.length = 0;
+            }
+            else if (FrameBase._isEntryBackstackVisible(current)) {
+                this._backStack.push(current);
+            }
+        }
+        if (current && this._backStack.indexOf(current) < 0) {
+            this._removeEntry(current);
+        }
+    };
+    FrameBase.prototype.raiseCurrentPageNavigatedEvents = function (isBack) {
+        var page = this.currentPage;
+        if (page) {
+            if (page.isLoaded) {
+                page.onUnloaded();
+            }
+            page.onNavigatedFrom(isBack);
+        }
     };
     FrameBase.prototype._processNavigationQueue = function (page) {
         if (this._navigationQueue.length === 0) {
@@ -226,10 +279,7 @@ var FrameBase = (function (_super) {
             return;
         }
         this._navigationQueue.shift();
-        if (this._navigationQueue.length > 0) {
-            var navigationContext = this._navigationQueue[0];
-            this._processNavigationContext(navigationContext);
-        }
+        this._processNextNavigationEntry();
         this._updateActionBar();
     };
     FrameBase.prototype._findEntryForTag = function (fragmentTag) {
@@ -259,29 +309,36 @@ var FrameBase = (function (_super) {
     };
     FrameBase.prototype._updateActionBar = function (page, disableNavBarAnimation) {
     };
-    FrameBase.prototype._processNavigationContext = function (navigationContext) {
-        if (navigationContext.isBackNavigation) {
-            this.performGoBack(navigationContext);
+    FrameBase.prototype._processNextNavigationEntry = function () {
+        if (!this.isLoaded || this._executingEntry) {
+            return;
         }
-        else {
-            this.performNavigation(navigationContext);
+        if (this._navigationQueue.length > 0) {
+            var navigationContext = this._navigationQueue[0];
+            if (navigationContext.isBackNavigation) {
+                this.performGoBack(navigationContext);
+            }
+            else {
+                this.performNavigation(navigationContext);
+            }
         }
     };
     FrameBase.prototype.performNavigation = function (navigationContext) {
         var navContext = navigationContext.entry;
-        if (navigationContext.entry.entry.clearHistory) {
-            this._backStack.length = 0;
-        }
-        else if (FrameBase._isEntryBackstackVisible(this._currentEntry)) {
-            this._backStack.push(this._currentEntry);
-        }
+        this._executingEntry = navContext;
         this._onNavigatingTo(navContext, navigationContext.isBackNavigation);
         this._navigateCore(navContext);
     };
     FrameBase.prototype.performGoBack = function (navigationContext) {
-        var navContext = navigationContext.entry;
-        this._onNavigatingTo(navContext, navigationContext.isBackNavigation);
-        this._goBackCore(navContext);
+        var backstackEntry = navigationContext.entry;
+        var backstack = this._backStack;
+        if (!backstackEntry) {
+            backstackEntry = backstack[backstack.length - 1];
+            navigationContext.entry = backstackEntry;
+        }
+        this._executingEntry = backstackEntry;
+        this._onNavigatingTo(backstackEntry, true);
+        this._goBackCore(backstackEntry);
     };
     FrameBase.prototype._goBackCore = function (backstackEntry) {
         if (view_1.traceEnabled()) {
@@ -375,8 +432,9 @@ var FrameBase = (function (_super) {
         configurable: true
     });
     FrameBase.prototype.eachChildView = function (callback) {
-        if (this.currentPage) {
-            callback(this.currentPage);
+        var page = this.currentPage;
+        if (page) {
+            callback(page);
         }
     };
     FrameBase.prototype._getIsAnimatedNavigation = function (entry) {
@@ -453,6 +511,9 @@ var FrameBase = (function (_super) {
     FrameBase.defaultAnimatedNavigation = true;
     __decorate([
         profiling_1.profile
+    ], FrameBase.prototype, "onLoaded", null);
+    __decorate([
+        profiling_1.profile
     ], FrameBase.prototype, "performNavigation", null);
     __decorate([
         profiling_1.profile
@@ -469,7 +530,7 @@ function topmost() {
 exports.topmost = topmost;
 function goBack() {
     var top = topmost();
-    if (top.canGoBack()) {
+    if (top && top.canGoBack()) {
         top.goBack();
         return true;
     }

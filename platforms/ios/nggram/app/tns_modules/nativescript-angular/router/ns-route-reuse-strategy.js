@@ -6,7 +6,10 @@ var page_router_outlet_1 = require("./page-router-outlet");
 /**
  * Detached state cache
  */
-var DetachedStateCache = /** @class */ (function () {
+var /**
+ * Detached state cache
+ */
+DetachedStateCache = (function () {
     function DetachedStateCache() {
         this.cache = new Array();
     }
@@ -43,7 +46,7 @@ var DetachedStateCache = /** @class */ (function () {
  * and reattaches them on back.
  * Reuses routes as long as their route config is the same.
  */
-var NSRouteReuseStrategy = /** @class */ (function () {
+var NSRouteReuseStrategy = (function () {
     function NSRouteReuseStrategy(location) {
         this.location = location;
         this.cache = new DetachedStateCache();
@@ -108,10 +111,13 @@ var NSRouteReuseStrategy = /** @class */ (function () {
     NSRouteReuseStrategy.prototype.clearCache = function () {
         this.cache.clear();
     };
-    NSRouteReuseStrategy = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [ns_location_strategy_1.NSLocationStrategy])
-    ], NSRouteReuseStrategy);
+    NSRouteReuseStrategy.decorators = [
+        { type: core_1.Injectable },
+    ];
+    /** @nocollapse */
+    NSRouteReuseStrategy.ctorParameters = function () { return [
+        { type: ns_location_strategy_1.NSLocationStrategy, },
+    ]; };
     return NSRouteReuseStrategy;
 }());
 exports.NSRouteReuseStrategy = NSRouteReuseStrategy;

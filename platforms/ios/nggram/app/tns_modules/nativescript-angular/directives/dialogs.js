@@ -3,7 +3,7 @@ var core_1 = require("@angular/core");
 var page_1 = require("tns-core-modules/ui/page");
 var detached_loader_1 = require("../common/detached-loader");
 var platform_providers_1 = require("../platform-providers");
-var ModalDialogParams = /** @class */ (function () {
+var ModalDialogParams = (function () {
     function ModalDialogParams(context, closeCallback) {
         if (context === void 0) { context = {}; }
         this.context = context;
@@ -12,10 +12,9 @@ var ModalDialogParams = /** @class */ (function () {
     return ModalDialogParams;
 }());
 exports.ModalDialogParams = ModalDialogParams;
-var ModalDialogService = /** @class */ (function () {
+var ModalDialogService = (function () {
     function ModalDialogService() {
     }
-    ModalDialogService_1 = ModalDialogService;
     ModalDialogService.prototype.showModal = function (type, _a) {
         var viewContainerRef = _a.viewContainerRef, moduleRef = _a.moduleRef, context = _a.context, fullscreen = _a.fullscreen;
         if (!viewContainerRef) {
@@ -29,16 +28,18 @@ var ModalDialogService = /** @class */ (function () {
         var componentContainer = moduleRef || viewContainerRef;
         var resolver = componentContainer.injector.get(core_1.ComponentFactoryResolver);
         return new Promise(function (resolve) {
-            setTimeout(function () { return ModalDialogService_1.showDialog({
-                containerRef: viewContainerRef,
-                context: context,
-                doneCallback: resolve,
-                fullscreen: fullscreen,
-                pageFactory: pageFactory,
-                parentPage: parentPage,
-                resolver: resolver,
-                type: type,
-            }); }, 10);
+            setTimeout(function () {
+                return ModalDialogService.showDialog({
+                    containerRef: viewContainerRef,
+                    context: context,
+                    doneCallback: resolve,
+                    fullscreen: fullscreen,
+                    pageFactory: pageFactory,
+                    parentPage: parentPage,
+                    resolver: resolver,
+                    type: type,
+                });
+            }, 10);
         });
     };
     ModalDialogService.showDialog = function (_a) {
@@ -72,25 +73,27 @@ var ModalDialogService = /** @class */ (function () {
             parentPage.showModal(page, context, closeCallback, fullscreen);
         });
     };
-    ModalDialogService = ModalDialogService_1 = __decorate([
-        core_1.Injectable()
-    ], ModalDialogService);
+    ModalDialogService.decorators = [
+        { type: core_1.Injectable },
+    ];
+    /** @nocollapse */
+    ModalDialogService.ctorParameters = function () { return []; };
     return ModalDialogService;
-    var ModalDialogService_1;
 }());
 exports.ModalDialogService = ModalDialogService;
-var ModalDialogHost = /** @class */ (function () {
+var ModalDialogHost = (function () {
     function ModalDialogHost() {
         throw new Error("ModalDialogHost is deprecated. " +
             "Call ModalDialogService.showModal() " +
             "by passing ViewContainerRef in the options instead.");
     }
-    ModalDialogHost = __decorate([
-        core_1.Directive({
-            selector: "[modal-dialog-host]" // tslint:disable-line:directive-selector
-        }),
-        __metadata("design:paramtypes", [])
-    ], ModalDialogHost);
+    ModalDialogHost.decorators = [
+        { type: core_1.Directive, args: [{
+                    selector: "[modal-dialog-host]" // tslint:disable-line:directive-selector
+                },] },
+    ];
+    /** @nocollapse */
+    ModalDialogHost.ctorParameters = function () { return []; };
     return ModalDialogHost;
 }());
 exports.ModalDialogHost = ModalDialogHost;

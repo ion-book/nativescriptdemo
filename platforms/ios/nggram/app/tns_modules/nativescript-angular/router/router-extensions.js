@@ -3,7 +3,7 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var ns_location_strategy_1 = require("./ns-location-strategy");
 var frame_1 = require("tns-core-modules/ui/frame");
-var RouterExtensions = /** @class */ (function () {
+var RouterExtensions = (function () {
     function RouterExtensions(router, locationStrategy, frame) {
         this.router = router;
         this.locationStrategy = locationStrategy;
@@ -33,12 +33,15 @@ var RouterExtensions = /** @class */ (function () {
     RouterExtensions.prototype.canGoBackToPreviousPage = function () {
         return this.frame.canGoBack();
     };
-    RouterExtensions = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [router_1.Router,
-            ns_location_strategy_1.NSLocationStrategy,
-            frame_1.Frame])
-    ], RouterExtensions);
+    RouterExtensions.decorators = [
+        { type: core_1.Injectable },
+    ];
+    /** @nocollapse */
+    RouterExtensions.ctorParameters = function () { return [
+        { type: router_1.Router, },
+        { type: ns_location_strategy_1.NSLocationStrategy, },
+        { type: frame_1.Frame, },
+    ]; };
     return RouterExtensions;
 }());
 exports.RouterExtensions = RouterExtensions;

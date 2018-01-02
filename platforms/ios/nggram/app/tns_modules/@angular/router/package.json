@@ -1,41 +1,44 @@
 {
-  "_from": "@angular/router@~4.4.1",
-  "_id": "@angular/router@4.4.6",
+  "_args": [
+    [
+      "@angular/router@5.0.5",
+      "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram"
+    ]
+  ],
+  "_from": "@angular/router@5.0.5",
+  "_id": "@angular/router@5.0.5",
   "_inBundle": false,
-  "_integrity": "sha1-D2rSmuD/jSyeo3m9MgRHIXt+yGY=",
+  "_integrity": "sha1-m/ZEgLJk/YzfqWpqGb+8JXJ0Ulo=",
   "_location": "/@angular/router",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "@angular/router@~4.4.1",
+    "raw": "@angular/router@5.0.5",
     "name": "@angular/router",
     "escapedName": "@angular%2frouter",
     "scope": "@angular",
-    "rawSpec": "~4.4.1",
+    "rawSpec": "5.0.5",
     "saveSpec": null,
-    "fetchSpec": "~4.4.1"
+    "fetchSpec": "5.0.5"
   },
   "_requiredBy": [
-    "/tns-template-hello-world-ng"
+    "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@angular/router/-/router-4.4.6.tgz",
-  "_shasum": "0f6ad29ae0ff8d2c9ea379bd320447217b7ec866",
-  "_spec": "@angular/router@~4.4.1",
-  "_where": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/node_modules/tns-template-hello-world-ng",
+  "_resolved": "https://registry.npmjs.org/@angular/router/-/router-5.0.5.tgz",
+  "_spec": "5.0.5",
+  "_where": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram",
   "author": {
     "name": "angular"
   },
   "bugs": {
     "url": "https://github.com/angular/angular/issues"
   },
-  "bundleDependencies": false,
   "dependencies": {
     "tslib": "^1.7.1"
   },
-  "deprecated": false,
   "description": "Angular - the routing library",
-  "es2015": "./@angular/router.js",
+  "es2015": "./esm2015/router.js",
   "homepage": "https://github.com/angular/angular/tree/master/packages/router",
   "keywords": [
     "angular",
@@ -43,18 +46,18 @@
   ],
   "license": "MIT",
   "main": "./bundles/router.umd.js",
-  "module": "./@angular/router.es5.js",
+  "module": "./esm5/router.js",
   "name": "@angular/router",
   "peerDependencies": {
-    "@angular/core": "4.4.6",
-    "@angular/common": "4.4.6",
-    "@angular/platform-browser": "4.4.6",
-    "rxjs": "^5.0.1"
+    "@angular/core": "5.0.5",
+    "@angular/common": "5.0.5",
+    "@angular/platform-browser": "5.0.5",
+    "rxjs": "^5.5.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/angular/angular.git"
   },
   "typings": "./router.d.ts",
-  "version": "4.4.6"
+  "version": "5.0.5"
 }

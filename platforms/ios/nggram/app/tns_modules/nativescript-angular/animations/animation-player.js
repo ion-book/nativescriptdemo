@@ -1,7 +1,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var utils_1 = require("./utils");
 var trace_1 = require("../trace");
-var NativeScriptAnimationPlayer = /** @class */ (function () {
+var NativeScriptAnimationPlayer = (function () {
     function NativeScriptAnimationPlayer(target, keyframes, duration, delay, easing) {
         this.target = target;
         this.duration = duration;

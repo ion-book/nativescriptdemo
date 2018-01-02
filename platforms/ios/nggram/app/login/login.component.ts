@@ -1,33 +1,75 @@
 import { Component, OnInit } from "@angular/core";
 import { Page } from 'ui/page';
-import { Router } from "@angular/router";
+
+import { android, AndroidApplication, AndroidActivityBundleEventData,
+    AndroidActivityEventData, AndroidActivityResultEventData,
+    AndroidActivityBackPressedEventData } from "application";
+
+
+
+import { Router } from '@angular/router';
+import { RouterExtensions } from 'nativescript-angular/router/router-extensions';
+
+import { EventData } from 'data/observable';
+import * as applicationSettings from "application-settings";
+
 @Component({
     selector: "ns-login",
     templateUrl: "./login.component.html",
-    moduleId: module.id,
-    styleUrls: ["login.component.css"]
+    moduleId: module.id
 })
 
 export class LoginComponent implements OnInit {
 
     email: string = '';
     password: string ='';
+    remember: boolean = true;
 
-    constructor( private page: Page, private router: Router ) {}
+    constructor(
+        private page: Page,
+        private routerExtensions: RouterExtensions,
+    ) {}
 
     ngOnInit() {
-        this.page.backgroundColor = 'lightgray';
+       
+        console.log('ng on init login');
+/*
+        if (applicationSettings.hasKey('remember')) {
+            if (this.remember){
+                this.email = applicationSettings.getString('email');
+                this.password = applicationSettings.getString('password');
+                this.login();
+            }
+        }
+*/
+        // this.page.actionBarHidden = true;
+        // this.page.backgroundColor = 'lightgray';
+        // this.page.backgroundImage = 'res://icon';
     }
 
     login() {
-        this.router.navigate(['/list']);
+        if (this.email !== '', this.password !== ''){
+            alert (this.remember);
+            applicationSettings.setBoolean('remember', this.remember);
+            if(this.remember){
+                applicationSettings.setString('email', this.email);
+                applicationSettings.setString('password', this.password);
+            }
+            else {
+                applicationSettings.remove('email');
+                applicationSettings.remove('password');
+            }
+            this.routerExtensions.navigate(
+                ['/home'],
+                {
+                    transition: {
+                        name: 'flip',
+                        duration: 2000,
+                        curve: 'linear'
+                    }
+                }
+            );
+        }
+        
     }
-
-    myItems = [
-        { name : 'Angular' , img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png'},
-        { name: 'NativeScript', img: 'https://cdn-images-1.medium.com/max/272/1*YVyVa_5CAC_CkhrmgNS2Eg.png'},
-        { name: 'NG-CLASSROOM', img: 'https://blog.ng-classroom.com/images/ion-book-wh.png'},
-        { name: 'TypeScript', img: 'https://pbs.twimg.com/profile_images/743155381661143040/bynNY5dJ_400x400.jpg'},
-        { name: 'RxJS', img: 'https://cdn.auth0.com/blog/reactive-programming/logo.png'}
-    ]
  }

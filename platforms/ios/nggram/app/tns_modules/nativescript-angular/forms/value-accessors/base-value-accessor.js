@@ -1,7 +1,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var view_1 = require("tns-core-modules/ui/core/view");
 var lang_facade_1 = require("../../lang-facade");
-var BaseValueAccessor = /** @class */ (function () {
+var BaseValueAccessor = (function () {
     function BaseValueAccessor(view) {
         this.view = view;
         this.pendingChangeNotification = 0;

@@ -1,32 +1,35 @@
 {
-  "_from": "tns-core-modules@~3.2.0",
-  "_id": "tns-core-modules@3.2.0",
+  "_args": [
+    [
+      "tns-core-modules@3.4.0",
+      "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram"
+    ]
+  ],
+  "_from": "tns-core-modules@3.4.0",
+  "_id": "tns-core-modules@3.4.0",
   "_inBundle": false,
-  "_integrity": "sha1-v0cYlbc8teVUnETyU0Hff100+cI=",
+  "_integrity": "sha1-PEDdPpXGwzs/73rU7nTaqEOpKhE=",
   "_location": "/tns-core-modules",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "tns-core-modules@~3.2.0",
+    "raw": "tns-core-modules@3.4.0",
     "name": "tns-core-modules",
     "escapedName": "tns-core-modules",
-    "rawSpec": "~3.2.0",
+    "rawSpec": "3.4.0",
     "saveSpec": null,
-    "fetchSpec": "~3.2.0"
+    "fetchSpec": "3.4.0"
   },
   "_requiredBy": [
-    "/tns-template-hello-world-ng"
+    "/"
   ],
-  "_resolved": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-3.2.0.tgz",
-  "_shasum": "bf471895b73cb5e5549c44f25341df7f5d34f9c2",
-  "_spec": "tns-core-modules@~3.2.0",
-  "_where": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/node_modules/tns-template-hello-world-ng",
-  "bundleDependencies": false,
+  "_resolved": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-3.4.0.tgz",
+  "_spec": "3.4.0",
+  "_where": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram",
   "dependencies": {
-    "tns-core-modules-widgets": "3.2.0"
+    "tns-core-modules-widgets": "3.4.0"
   },
-  "deprecated": false,
   "description": "Telerik NativeScript Core Modules",
   "devDependencies": {
     "@types/node": "~7.0.5",
@@ -35,6 +38,7 @@
   "files": [
     "**/*.d.ts",
     "**/*.js",
+    "**/package.json",
     "!android17.d.ts",
     "!ios.d.ts",
     "!bin/",
@@ -57,7 +61,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NativeScript/NativeScript/commit/edf2a21285c5d4383d6868812cfd81e432e17e22"
+    "url": "https://github.com/NativeScript/NativeScript/commit/40868ae54b12b1e244a9cf93e3cc116f062eae86"
   },
   "snapshot": {
     "android": {
@@ -70,5 +74,5 @@
     }
   },
   "typings": "tns-core-modules.d.ts",
-  "version": "3.2.0"
+  "version": "3.4.0"
 }

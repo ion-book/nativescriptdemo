@@ -10,22 +10,24 @@ exports.FORMS_DIRECTIVES = [
     value_accessors_1.SelectedIndexValueAccessor,
     value_accessors_1.NumberValueAccessor,
 ];
-var NativeScriptFormsModule = /** @class */ (function () {
+var NativeScriptFormsModule = (function () {
     function NativeScriptFormsModule() {
     }
-    NativeScriptFormsModule = __decorate([
-        core_1.NgModule({
-            declarations: exports.FORMS_DIRECTIVES,
-            providers: [],
-            imports: [
-                forms_1.FormsModule
-            ],
-            exports: [
-                forms_1.FormsModule,
-                exports.FORMS_DIRECTIVES,
-            ]
-        })
-    ], NativeScriptFormsModule);
+    NativeScriptFormsModule.decorators = [
+        { type: core_1.NgModule, args: [{
+                    declarations: exports.FORMS_DIRECTIVES,
+                    providers: [],
+                    imports: [
+                        forms_1.FormsModule
+                    ],
+                    exports: [
+                        forms_1.FormsModule,
+                        exports.FORMS_DIRECTIVES,
+                    ]
+                },] },
+    ];
+    /** @nocollapse */
+    NativeScriptFormsModule.ctorParameters = function () { return []; };
     return NativeScriptFormsModule;
 }());
 exports.NativeScriptFormsModule = NativeScriptFormsModule;

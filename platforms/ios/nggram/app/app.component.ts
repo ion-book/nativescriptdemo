@@ -1,4 +1,13 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+
+import { android, AndroidApplication, AndroidActivityBundleEventData,
+    AndroidActivityEventData, AndroidActivityResultEventData,
+    AndroidActivityBackPressedEventData } from "application";
+
+
+import { EventData } from 'data/observable';
+import * as applicationSettings from "application-settings";
+import { RouterExtensions } from 'nativescript-angular/router/router-extensions';
 
 @Component({
     selector: "ns-app",
@@ -6,6 +15,21 @@ import { Component } from "@angular/core";
     styleUrls: ["app.component.css"]
 })
 
-export class AppComponent{
+export class AppComponent {
 
- }
+   
+
+    constructor(private routerExtensions: RouterExtensions) {
+        applicationSettings.setBoolean('remember', true);
+        if (applicationSettings.hasKey('remember')) {
+            this.login();
+        }
+    } 
+
+    login() {
+        console.log('entre al remember login');
+        if (applicationSettings.getBoolean('remember')){
+           this.routerExtensions.navigate(['/home']);
+        }
+    }
+}

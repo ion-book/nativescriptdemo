@@ -1,7 +1,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var view_1 = require("tns-core-modules/ui/core/view");
 var layout_base_1 = require("tns-core-modules/ui/layouts/layout-base");
-var InvisibleNode = /** @class */ (function (_super) {
+var InvisibleNode = (function (_super) {
     __extends(InvisibleNode, _super);
     function InvisibleNode() {
         var _this = _super.call(this) || this;
@@ -15,7 +15,7 @@ var InvisibleNode = /** @class */ (function (_super) {
     return InvisibleNode;
 }(view_1.View));
 exports.InvisibleNode = InvisibleNode;
-var CommentNode = /** @class */ (function (_super) {
+var CommentNode = (function (_super) {
     __extends(CommentNode, _super);
     function CommentNode() {
         var _this = _super.call(this) || this;
@@ -30,7 +30,7 @@ var CommentNode = /** @class */ (function (_super) {
     return CommentNode;
 }(InvisibleNode));
 exports.CommentNode = CommentNode;
-var TextNode = /** @class */ (function (_super) {
+var TextNode = (function (_super) {
     __extends(TextNode, _super);
     function TextNode() {
         var _this = _super.call(this) || this;
@@ -46,6 +46,8 @@ var TextNode = /** @class */ (function (_super) {
 }(InvisibleNode));
 exports.TextNode = TextNode;
 var getClassName = function (instance) { return instance.constructor.name; };
+var ɵ0 = getClassName;
+exports.ɵ0 = ɵ0;
 function isDetachedElement(element) {
     return (element && element.meta && element.meta.skipAddToDom);
 }
