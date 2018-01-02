@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>92899643813-v120qljqlqi55tdrg38e1sfafq9lgjog.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.92899643813-v120qljqlqi55tdrg38e1sfafq9lgjog</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDlwk6YYDCa73MOB6Cgg-PI6GJB8XZqfq8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>92899643813</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jorgeucano.nggram</string>
+	<key>PROJECT_ID</key>
+	<string>ng-gram</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ng-gram.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:92899643813:ios:aeac85f51dbd0426</string>
+	<key>DATABASE_URL</key>
+	<string>https://ng-gram.firebaseio.com</string>
+</dict>
+</plist>
