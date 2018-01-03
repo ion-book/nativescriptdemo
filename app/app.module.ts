@@ -11,7 +11,20 @@ import { PostComponent } from './post/post.component';
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
 // Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
-// import { NativeScriptHttpModule } from "nativescript-angular/http";
+import { NativeScriptHttpModule } from "nativescript-angular/http";
+
+import firebase = require('nativescript-plugin-firebase');
+
+firebase.init({
+    persist: false
+}).then(
+    (instance) => {
+        console.log('firebase init ok');
+    },
+    (error) => {
+        console.log('oh oh ocurrio un error con firebase');
+    }
+)
 
 @NgModule({
     bootstrap: [
@@ -20,7 +33,8 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
     imports: [
         NativeScriptModule,
         AppRoutingModule,
-        NativeScriptFormsModule
+        NativeScriptFormsModule,
+        NativeScriptHttpModule
     ],
     declarations: [
         AppComponent,

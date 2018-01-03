@@ -1,11 +1,11 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Type } from '@angular/core';
 import { Page } from 'ui/page';
 
 import { android, AndroidApplication, AndroidActivityBundleEventData,
     AndroidActivityEventData, AndroidActivityResultEventData,
     AndroidActivityBackPressedEventData } from "application";
 
-
+    import firebase = require('nativescript-plugin-firebase');
 
 import { Router } from '@angular/router';
 import { RouterExtensions } from 'nativescript-angular/router/router-extensions';
@@ -25,26 +25,25 @@ export class LoginComponent implements OnInit {
     password: string ='';
     remember: boolean = true;
 
+    loginGoogle() {
+        firebase.login({
+            type: firebase.LoginType.GOOGLE
+        }).then(
+            (result)=> {
+                console.log(JSON.stringify(result));
+            },
+            (error) => {
+                console.log('error', error);
+            });
+    }
+
     constructor(
         private page: Page,
         private routerExtensions: RouterExtensions,
-    ) {}
+    ) { }
 
     ngOnInit() {
        
-        console.log('ng on init login');
-/*
-        if (applicationSettings.hasKey('remember')) {
-            if (this.remember){
-                this.email = applicationSettings.getString('email');
-                this.password = applicationSettings.getString('password');
-                this.login();
-            }
-        }
-*/
-        // this.page.actionBarHidden = true;
-        // this.page.backgroundColor = 'lightgray';
-        // this.page.backgroundImage = 'res://icon';
     }
 
     login() {

@@ -22,5 +22,5 @@
     <Label text="Recordar" dock="top" style="width: 20%"></Label>
     <Switch dock="top" (change)="remember = !remember" checked="{{remember}}" style="width:20%"></Switch>
     <Button (tap)="login()" class="button" dock="top" text="Ingresar" height="10%"></Button>
-    <Button class="button" dock="top" text="Registrarse" height="10%"></Button>
+    <Button (tap)="loginGoogle()" class="button" dock="top" text="Registrarse" height="10%"></Button>
 </DockLayout>

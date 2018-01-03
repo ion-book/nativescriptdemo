@@ -15,16 +15,25 @@ import { RouterExtensions } from 'nativescript-angular/router/router-extensions'
     styleUrls: ["app.component.css"]
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit{
 
    
 
     constructor(private routerExtensions: RouterExtensions) {
         applicationSettings.setBoolean('remember', true);
         if (applicationSettings.hasKey('remember')) {
-            this.login();
+           // this.login();
+           
         }
     } 
+
+    ngOnInit() {
+        this.checkFirebase();
+    }
+
+    checkFirebase() {
+
+    }
 
     login() {
         console.log('entre al remember login');
