@@ -1,0 +1,10 @@
+<ListView [items]="myItems">
+    <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+        <StackLayout [class.odd]="odd" [class.even]="even" 
+            [nsRouterLink]="['/post', item.id]" >
+            <Label class="nick_name" [text]="item.name"></Label>
+            <Image class="image_post" dock="top" [src]="item.img"></Image>
+            <TextView editable="false" text="Hola soy un texview"></TextView>
+        </StackLayout>        
+    </ng-template>
+</ListView>

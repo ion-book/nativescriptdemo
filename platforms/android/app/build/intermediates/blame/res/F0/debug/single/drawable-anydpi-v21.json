@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/f0372f817110d3917e368a76ca07b7c81b7006ef/output/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/f0372f817110d3917e368a76ca07b7c81b7006ef/output/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    }
+]

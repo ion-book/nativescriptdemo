@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0a8e781c4796ea56c3e5ce2ff72b30848403bbc3/output/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/77825f79fd88bf69e581050507053c9cc6fe31a1/output/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/design_tint_password_toggle.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/f0372f817110d3917e368a76ca07b7c81b7006ef/output/res/color/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_tint_spinner.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/com_facebook_button_text_color.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/bafa57e38568e11ecd6a56be56c9fe388211def0/output/res/color/com_facebook_button_text_color.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/com_facebook_send_button_text_color.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/cf8c0a0e26e3cf199c6832183802b4a52157b0d4/output/res/color/com_facebook_send_button_text_color.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/design_error.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/f0372f817110d3917e368a76ca07b7c81b7006ef/output/res/color/design_error.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/77825f79fd88bf69e581050507053c9cc6fe31a1/output/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_tint_edittext.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_tint_switch_track.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_search_url_text.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/77825f79fd88bf69e581050507053c9cc6fe31a1/output/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_tint_default.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color/abc_hint_foreground_material_dark.xml"
+    }
+]

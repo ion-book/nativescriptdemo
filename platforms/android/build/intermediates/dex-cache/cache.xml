@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/af63f5036d9c600a7fb6832333807bb0c615fd38/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8c5a80c80167d5e6bfe84309f0787a769fd23f61">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_005dcb3f465731a4bb658b268a33db0468c32e19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/638138dee8ac3317f6ca5a22dcbd3fbe20ab2e92/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d928394035bd4f7d2ee9e1c63d45f9ec088e21a4">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_619420259364d2b143eadf2b514291add04141d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/6410cfe27fa2abfbb94ccd0afb1f2870281a3383/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a7760a45a6c9f425aaa43ef391a8cf28a8bcb4a1">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_5745b7a12ff873c7c703503c9967cc1280131952.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/47d2cc6efb12705b88d4df971c95ccb883232b4a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c59cc4d67084879423713a416182208836c0a29f">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_00f34eb33123dfedbab4c80a346307eb9d4d61e3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/ffbee134b273032f0336482f6cddf83573be7de1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0d394688dd7030b83dea8eed3fa483410c24afe0">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_48c37164296392c6362965182621ebc4561a82a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/73c17625f03eab42a81f2c5f21a6b21a9890fce3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="91dae39a5cc837ad2a829c0dc69c57ab8d69d22b">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_bfbbbee5ad595e7d4350cb3491fbc71be8f149c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.7.2/20f6463eb19ac61960c5d91a094c2f4f0727dc2e/okhttp-2.7.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="20f6463eb19ac61960c5d91a094c2f4f0727dc2e">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/okhttp-2.7.2_af26e4de257bd7b268103a3d78158a34214ac638.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/93609635eafd18210b37a05c69e80a82765e33d8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2482bfd874e8b3927f4141105674ad392ff83698">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_74db79c22147c832f0e4ef22a9b697da0bc3b864.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/98559078ac3c32be638a926db965daa0ca4b7b8c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="925879273e627f34059466359ba6789cf61889e2">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_415378021b7e094871d1d97ca27ed95e5c065237.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/bolts-applinks-1.4.0_963322a572628365059fab345f218eae272450a8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/fab71c927896bcdf8928b3456b3dd290720c2dda/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_6a6e747699073bf7acfc45ee4f1a2f4c212feb3b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/7ed38ff5396e12c9f62bbca6647a6a71674e4a19/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4b882397288de69e13ff147bdefe584cc6deb055">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_d24b31c71802526c2b4a021f7cf58e56a28869fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/771d8de4f0e96bd70eac2c62142b4e7d18d111c4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4e7ca65463655d11456435e37fba9500c070d05e">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_a31528dd95bf51352b63e20a76a3ec9c6b37d9af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/c0415cd10b3a733452684fb1494f3e80f4deebcb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="aeca0a0ab86831ec59a54723205ce9341ac22d1b">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_30f58abd0e03a657fe2cf4035d8e7b6d2e3e9ab1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/f66c302d370a727c5b2253b014683a7d96582617/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dc98b63d89490102b0a38423e24dce190354795b">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_11e11a98167b2de36c9b599d80563461762d0820.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/3536a5feacfa2d1bafa82d4431b5af9b80f92a8e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f8a80c9882b064f2943e10649a8d2b249f5bf176">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_c3824d49dc80a3fbb2a176f38387db24b072829e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/05279d5fe6825f97bc5b6fb920ac33f2b078081d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c5bc72ad3250d065128d1d7514279be703e57bd0">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_0d215a48a8cb43f0961256968a0e22bc91002ca1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/46f04e0248e49826b962a0e9258a39dd34ec5a36/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="cbbd26dd2f6d46181b41a5f6f5e34889442a811b">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_2b2339a00951c4108bb9efb0fe7fa5669fa575e3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/a661f692070eacf627988603b5f0db9b1d9958a2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="24cb9bae5fbe94df0f55d87452a291b69a2f22bf">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_4b8ba9b84cf14437411197ca9b50ad3e5d9c043f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/92f6966d2f27931fb01c31d6c71a59c98981574b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="746274223beb11b1cda7854d7eec3038695c2c93">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/debug/classes_ae5276e71b86e79988a0e02e76032ea636e8aaf8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.1/287742f1c6cea6d9126670e9f031890b0462362a/support-annotations-27.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="287742f1c6cea6d9126670e9f031890b0462362a">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/support-annotations-27.0.1_0a305dd4fa58cda8acc85ff81e3684f87ce59526.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/9ea70b1970744f13d4f96154e75367885f606fd2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="69f7591c9ff9238ff226e264c0260bb9f1ce0029">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_cfb02edd8ab836f0ce278ecf4faed726d032b3b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.2/3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf/gson-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/gson-2.8.2_bd28cea645cace804514d433786c7f94ac309a63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/c8ee1abd8e1db8bdfec8e5a5932cfb157efc5439/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ed04a0ae7198b0d5d0e965d6afdb0fe784dcfbee">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_460e33efebe6dffdfeaaced4082fc4a8eedd42a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.3.0/73c49077166faa4c3c0059c5f583d1d7bd1475fe/core-3.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/core-3.3.0_0c73c9e8e65f03668120eb614e7055885d8444aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/ad9bb539723fb5491f2bfe7a9e92aaa190b9e57f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fe66404378d7791a232cc3331811b2ce402f44c7">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_611b8284d1f1a96655e6c5f1ea95d6e7728fc3c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="59cbbfb2937ebed98c8bb8882b7112d16358014e">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_fcd2e222161df36b24436959f4e9df07c580f665.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/bolts-tasks-1.4.0_cd790a59b7bc461408da103399da4c73a22f18b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/1a9559de05748d2c6d6d4826cc9da2f88757262d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c44026185adf61f12630db36ac6781481f559e7c">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_5304977d7e571cb61b7240edaf9e548696e684c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/0b19636855147e8177673a9fe69f5d8612bf4623/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b8b26b28aae0ba8e2db55ad9fe0ebc770530c5ef">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_fcad680d314ce2686dcee2f4092bc03148444ac8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/common-1.0.0_e3a0a57066506eb2529ce80ed871c499ec729073.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/e73192ebe92a20a380ff65715d9750ed2c58a850/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="82ea5a937ab84229fbd2f3fc8cf2a72cbdf0ee0f">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_3e08179598b28dfd087aa7b59b1b7733252b0fc3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/03bf2eaf9670b03a6411c6f7c233296cfe1ef3de/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e6aeff19a2ce1eb896557be73cb9ceb56f8d1cf3">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_3737ffe194c9524e2d1afb6c4423ea6f47af1264.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/e947025f2e35da7340c11c11403dcea68f6bfce7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="1b982cc8b5ab6f788690238dbe3ac3bb19f88b1a">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_4f32a01a6ef665d71c009c3fafb6d52b4f087a47.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/cf8a69054316f9b7027eb67bb4616ba5822e1fce/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5ad3911825107d8dd4b017fdecebfd23c08048dd">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_7b6355dbc1644554f285a30f27161c171e317da1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/bb169549d09aecd1c9a8cd1371f5cfb322f48c57/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="122de0d704f76d2bb5cb9db66e00fe90a0a41e78">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_0b79fd597a521638664d6818bb4270a9fd1bc3ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/1f333b0f02375d5c54ee2a750d1d1bfe648412c2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f10fed27d6d0b4aae675f17b33c639b4d5a0ed93">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_d0be1181b634e482c9723fbe946a39ac4c179404.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/77825f79fd88bf69e581050507053c9cc6fe31a1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="233d88c6f961d2a84758dfe27b7af61318190c7b">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_139c6dffecbe2d22c0663e7ed37e70d0b9b7c069.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/78fa52acf8aa1ee6a28ae0f571a78297ea205423/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e59236507fc1c595cd784ce9aa81c2c04888fd40">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_dbc826dcf279345959d1ff357a520bb60e994a24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/04812626f4167449cd6f92c073e2a679cc610155/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0a23c4daa97697118d96f2b09d1dbaf9ea943d8d">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_3943fe83135592215f791241162073713d270d06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/okio-1.6.0_8c26ad0cf5f6710bfcfb3d729520c803c325cbf3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/7c3b8b93f73621a4e738a8272c12c5d4d8c67b5a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="53e8932b1ac8c7dfc35cfeda1f9efbc9822ceaf3">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_5c9febe143de5ef866ab61b6e1e7a2b5e54150e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/6f00bd3b7216e28e5baef8c0934d424ccb7ef8e8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fe94ced585bffcf3c7f788a294cc54e6785544ac">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_474d6d612ac70e12c5784370c4512f0e9bc4a472.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/d03c2f37eded62a09c79ce433e938af39c7e71e6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d9a09584e04eb95d247f251d5d498eb57fcf6e41">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_58950ea272a5754675a1e2c30da5030a1a0d655d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/49fb7b893080ee9b30938c66ec22ff0f3533ca23/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ac5e6ae168ef77f0b0b1e3245d7afd7d32f710c3">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_08dbabe91380a5edc22444c73e370038b81053bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/cf8c0a0e26e3cf199c6832183802b4a52157b0d4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="07ca601b039863d2c018dc7f625e845084d6d18b">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_7e55c8381566004e2ec76ac2ed98b874e7a714eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/common-1.0.0_95fcf0da6d1b143eba0832b57d1ba348a04b7870.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/3e7f7af2e39275eef98cb43436e36143efb87fd1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d2af2ef4d987d753f2e8ee2d1480ab964d5c7273">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_7db9530fb1ec966ec648a899057602dfd47c9a52.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/623c39d58378f399096753f9b3cdf7cb595d1e08/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7ca71e38c643e51083ab3a07f3a056bfb066caec">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_60313f8af17a0c1498ce9b9910420e0b66db01f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/8d10f6595c7d08abd31e9af86ad8040d21c16516/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="08bbb31d3aae0e337647a49575c2d1f1ec7d6996">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_3fa9b6c2853470ff684d44f328a0006a6d734299.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/d6ddc02cc1ec0bf2c2b3fc746717f52612a00195/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d4f9ace23785adf79a174d569bde261f032e1190">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_fa018db8ada44de96ef45559d63a1ee54b10919f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/ff2443a48defa1b0673f6214d4f80d49e4257195/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6746a3078625563a9eb381920f34e47ccd6bab87">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_1a15f1f47c2ab404bce5f464c81cbb022a7e3705.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/bafa57e38568e11ecd6a56be56c9fe388211def0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f95788f0e923006a2da51733d4cbd5c08aad299c">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_769997b7f3fd448fe9688afa2a21fa820062ffc2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/2a39f6b0ae4b9ecdfc77f4132d6bc9b1af30542e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="264ad23f9752aabecfa41115c52a25a023a08839">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_89773ece55d67a6fde447555493981adb4ef2201.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jorgeucano/.android/build-cache/2f138b20d1c8c4289b24ade55f1525720245877f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="42c9659c973e311ffdb645ed057e5053e0ab5c78">
+        <dex dex="/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_6cb2cbda779b1ab5d94ba94b6c187bd1a0f9f886.jar" />
+    </item>
+
+</items>

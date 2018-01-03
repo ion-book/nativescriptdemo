@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-v21/design_password_eye.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0b0a0ef6f59fc9fc58f7fd8cc3b9300d2f56880b/output/res/drawable-v21/design_password_eye.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0b0a0ef6f59fc9fc58f7fd8cc3b9300d2f56880b/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-v21/avd_show_password.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0b0a0ef6f59fc9fc58f7fd8cc3b9300d2f56880b/output/res/drawable-v21/avd_show_password.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/73c17625f03eab42a81f2c5f21a6b21a9890fce3/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-v21/avd_hide_password.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0b0a0ef6f59fc9fc58f7fd8cc3b9300d2f56880b/output/res/drawable-v21/avd_hide_password.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0F1/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/drawable-v21/abc_btn_colored_material.xml"
+    }
+]

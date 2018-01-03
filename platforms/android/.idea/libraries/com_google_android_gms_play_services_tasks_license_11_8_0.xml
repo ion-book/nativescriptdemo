@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.google.android.gms:play-services-tasks-license-11.8.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/3153b1d8ae7809540d989b07bdd05bab26605119/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/3153b1d8ae7809540d989b07bdd05bab26605119/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

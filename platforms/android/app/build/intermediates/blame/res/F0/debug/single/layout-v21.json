@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/73c17625f03eab42a81f2c5f21a6b21a9890fce3/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/73c17625f03eab42a81f2c5f21a6b21a9890fce3/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/layout-v21/notification_action.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/73c17625f03eab42a81f2c5f21a6b21a9890fce3/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/73c17625f03eab42a81f2c5f21a6b21a9890fce3/output/res/layout-v21/notification_template_custom_big.xml"
+    }
+]

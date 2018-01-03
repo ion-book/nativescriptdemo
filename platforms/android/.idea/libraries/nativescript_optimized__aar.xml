@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="nativescript-optimized:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/92f6966d2f27931fb01c31d6c71a59c98981574b/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/92f6966d2f27931fb01c31d6c71a59c98981574b/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0a8e781c4796ea56c3e5ce2ff72b30848403bbc3/output/res/color-v23/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color-v23/design_tint_password_toggle.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/f0372f817110d3917e368a76ca07b7c81b7006ef/output/res/color-v23/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/F0/debug/color-v23/abc_tint_default.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/c01b7835fc758f5c74960ad342257aacae3d56a3/output/res/color-v23/abc_tint_default.xml"
+    }
+]

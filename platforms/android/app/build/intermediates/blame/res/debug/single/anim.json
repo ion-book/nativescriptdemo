@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0a8e781c4796ea56c3e5ce2ff72b30848403bbc3/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/a0d734b0b8340537e6a3802a532ed0ba565698f8/output/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/a0d734b0b8340537e6a3802a532ed0ba565698f8/output/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0a8e781c4796ea56c3e5ce2ff72b30848403bbc3/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0a8e781c4796ea56c3e5ce2ff72b30848403bbc3/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0a8e781c4796ea56c3e5ce2ff72b30848403bbc3/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0a8e781c4796ea56c3e5ce2ff72b30848403bbc3/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0a8e781c4796ea56c3e5ce2ff72b30848403bbc3/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0a8e781c4796ea56c3e5ce2ff72b30848403bbc3/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0a8e781c4796ea56c3e5ce2ff72b30848403bbc3/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0a8e781c4796ea56c3e5ce2ff72b30848403bbc3/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/a0d734b0b8340537e6a3802a532ed0ba565698f8/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/a0d734b0b8340537e6a3802a532ed0ba565698f8/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/jorgeucano/Documents/cursos/ion-book/nativescript/ng-gram/platforms/android/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/jorgeucano/.android/build-cache/0a8e781c4796ea56c3e5ce2ff72b30848403bbc3/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    }
+]

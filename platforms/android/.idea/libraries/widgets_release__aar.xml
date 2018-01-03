@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="widgets-release:@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/d59021a58c91102935e9da8bd491b77a5281dd1e/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d59021a58c91102935e9da8bd491b77a5281dd1e/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
