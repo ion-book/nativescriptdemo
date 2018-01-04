@@ -1,9 +1,10 @@
 import { Component, OnInit } from "@angular/core";
 import { RouterExtensions } from 'nativescript-angular/router/router-extensions';
-import { DogService } from '../common/dog.service';
 import * as SocialShare from "nativescript-social-share";
+import { DogService } from '../common/dog.service';
 
 import firebase = require('nativescript-plugin-firebase');
+
 
 @Component({
     selector: "ns-home",
@@ -18,9 +19,7 @@ export class HomeComponent {
     constructor(
         private routerExtensions: RouterExtensions,
         private dogService: DogService
-    ) {
-        console.log('home constructor');
-    }
+    ) {}
 
     share(url: string) {
         SocialShare.shareText(url);
@@ -28,36 +27,36 @@ export class HomeComponent {
 
     ngOnInit() {
 
+
         this.dogService.getNewList().then(
-            (response:any) => {
-                this.myItems = response.message;
-            }
-        );
+            (response: any) => {
+                this.myItems = response.message
+            },
+            (error) => console.log('error new list ', error)
+        )
 
-        this.dogService.getList()
-            .then(
-                response => {
-                    console.log('response', response);
+        this.dogService.getList().subscribe(
+            (response) => console.log(response),
+            (error) => console.log('error', error)
+        )
+
+
+        firebase.admob.showInterstitial({
+            iosInterstitialId: "ca-app-pub-9517346003011652/6938836122",
+            androidInterstitialId: "ca-app-pub-9517346003011652/6938836122",
+            testing: true, // when not running in production set this to true, Google doesn't like it any other way
+            iosTestDeviceIds: [ // Android automatically adds the connected device as test device with testing:true, iOS does not
+                "45d77bf513dfabc2949ba053da83c0c7b7e87715", // Eddy's iPhone 6s
+                "fee4cf319a242eab4701543e4c16db89c722731f"  // Eddy's iPad Pro
+            ]
+            }).then(
+                function () {
+                console.log("AdMob interstitial showing");
                 },
-                (error) => console.log(error)
+                function (errorMessage) {
+                alert('error admob inter');
+                }
             );
-
-            firebase.admob.showInterstitial({
-                iosInterstitialId: "ca-app-pub-9517346003011652/6938836122",
-                androidInterstitialId: "ca-app-pub-9517346003011652/6938836122",
-                testing: true, // when not running in production set this to true, Google doesn't like it any other way
-                iosTestDeviceIds: [ // Android automatically adds the connected device as test device with testing:true, iOS does not
-                    "45d77bf513dfabc2949ba053da83c0c7b7e87715", // Eddy's iPhone 6s
-                    "fee4cf319a242eab4701543e4c16db89c722731f"  // Eddy's iPad Pro
-                ]
-              }).then(
-                  function () {
-                    console.log("AdMob interstitial showing");
-                  },
-                  function (errorMessage) {
-                    alert('error admob inter');
-                  }
-              );
             
         firebase.admob.showBanner({
             size: firebase.admob.AD_SIZE.SMART_BANNER, // see firebase.admob.AD_SIZE for all options

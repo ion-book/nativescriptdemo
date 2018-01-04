@@ -4,15 +4,12 @@ import { AppRoutingModule } from "./app.routing";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { NativeScriptHttpModule } from "nativescript-angular/http";
 
-import { DogService } from './common/dog.service';
-
 import { AppComponent } from "./app.component";
 import { LoginComponent } from './login/login.component';
 import { HomeComponent  } from './home/home.component';
 import { PostComponent } from './post/post.component';
 
-
-
+import { DogService } from './common/dog.service';
 
 import firebase = require('nativescript-plugin-firebase');
 

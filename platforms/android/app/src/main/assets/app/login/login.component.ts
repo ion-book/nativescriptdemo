@@ -30,16 +30,7 @@ export class LoginComponent implements OnInit {
             type: firebase.LoginType.GOOGLE
         }).then(
             (result)=> {
-                this.routerExtensions.navigate(
-                    ['/home'],
-                    {
-                        transition: {
-                            name: 'flip',
-                            duration: 2000,
-                            curve: 'linear'
-                        }
-                    }
-                );
+                this.routerExtensions.navigate(['/home']);
             },
             (error) => {
                 console.log('error', error);

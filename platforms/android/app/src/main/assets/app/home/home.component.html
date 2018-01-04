@@ -2,7 +2,7 @@
     <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
         <StackLayout [class.odd]="odd" [class.even]="even" 
             [nsRouterLink]="['/post', i]" >
-            <Label class="nick_name" text="Chow {{i}}"></Label>
+            <Label class="nick_name" text="komondor {{i}}"></Label>
             <Image class="image_post" dock="top" [src]="item"></Image>
                 <Button text="Share" (tap)="share(item)"></Button>
         </StackLayout>        
