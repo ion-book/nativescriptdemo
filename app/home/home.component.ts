@@ -1,7 +1,6 @@
 import { Component } from "@angular/core";
 import { RouterExtensions } from 'nativescript-angular/router/router-extensions';
 import { TouchGestureEventData } from 'ui/gestures';
-import { sample } from '../../platforms/android/app/build/intermediates/assets/debug/app/tns_modules/rxjs/src/operators/sample';
 
 @Component({
     selector: "ns-home",
